@@ -102,6 +102,10 @@ body {
   background-color: var(--bs-body-bg);
   -webkit-text-size-adjust: 100%;
   -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+  background: url("../assets/img/deneme.png");
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
 hr {
@@ -11009,17 +11013,19 @@ footer.footer .social-link:hover {
   }
 }
 .masthead {
-  min-height: 30rem;
-  position: relative; 
-  display: table;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  min-height:100dvh;
   width: 100%;
-  height: auto;
-  padding-top: 8rem;
-  padding-bottom: 8rem;
-  background: linear-gradient(90deg, rgba(255, 255, 255, 0.1) 0%, rgba(255, 255, 255, 0.1) 100%), url("../assets/img/deneme.png");
-  background-position: center center;
-  background-repeat: no-repeat;
-  background-size: cover;
+ 
+}
+.masthead>div {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 .masthead h1, .masthead .h1 {
   font-size: 2rem;
